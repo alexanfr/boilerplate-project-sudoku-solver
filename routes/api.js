@@ -28,7 +28,7 @@ module.exports = function (app) {
       }
 
       if(puzzle.length != 81) {
-        res.json({ error: 'Expected puzzle to be 81 characters long '});
+        res.json({ error: 'Expected puzzle to be 81 characters long'});
         return;
       }
 
@@ -73,7 +73,7 @@ module.exports = function (app) {
       }
 
       if(/[^0-9.]/g.test(puzzle)) {
-        res.json({ error:  'Invalid caharacters in puzzle' });
+        res.json({ error:  'Invalid characters in puzzle' });
         return;
       }
 
