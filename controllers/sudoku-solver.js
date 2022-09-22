@@ -29,8 +29,8 @@ class SudokuSolver {
     let grid = this.convertGrid(puzzleString);
     row = this.convertRowToNum(row);
 
-    if(grid[row-1][column-1] !== 0) {
-      return false;
+    if(grid[row-1][column-1] == value) {
+      return true;
     }
 
     for(let i = 0; i < 9; i++) {
@@ -46,8 +46,8 @@ class SudokuSolver {
     let grid = this.convertGrid(puzzleString);
     row = this.convertRowToNum(row);
 
-    if(grid[row-1][column-1] !== 0) {
-      return false;
+    if(grid[row-1][column-1] == value) {
+      return true;
     }
 
     for(let i = 0; i < 9; i++) {
@@ -63,8 +63,8 @@ class SudokuSolver {
     let grid = this.convertGrid(puzzleString);
     row = this.convertRowToNum(row);
 
-    if (grid[row-1][col-1] !== 0) {
-      return false;
+    if (grid[row-1][col-1] == value) {
+      return true;
     }
 
     let startRow = row - (row % 3),
