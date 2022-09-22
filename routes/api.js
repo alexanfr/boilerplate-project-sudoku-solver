@@ -22,7 +22,7 @@ module.exports = function (app) {
         return;
       }
 
-      if (!/[1-9]/i.test(value)) {
+      if (!/^([1-9])$/g.test(value)) {
         res.json({ error: 'Invalid value' });
         return;
       }
